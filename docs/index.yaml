@@ -3,7 +3,7 @@ entries:
   permission-manager:
   - apiVersion: v2
     appVersion: 1.7.1-rc1
-    created: "2021-12-04T10:26:09.437404848+08:00"
+    created: "2021-12-04T15:48:42.825442625+08:00"
     description: A Helm chart for Kubernetes
     digest: a010d03e616a08411889adcb16a618b1710f9b922a763333187887eb6d4f8f32
     name: permission-manager
@@ -13,12 +13,12 @@ entries:
     version: 1.7.1-rc1
   - apiVersion: v2
     appVersion: 1.7.1-rc1
-    created: "2021-12-04T10:26:09.437032138+08:00"
+    created: "2021-12-04T15:48:42.825062683+08:00"
     description: A Helm chart for Kubernetes
-    digest: 46b43b97391c803d539ecbe56506e27b3511cb5d6691668c6a95a13c01abaaca
+    digest: 4f902e5445e758c17de26008d159a0c4501470daed10c79a7e3c2c86a93bce09
     name: permission-manager
     type: application
     urls:
     - permission-manager-1.0.0-seal.tgz
     version: 1.0.0-seal
-generated: "2021-12-04T10:26:09.436503245+08:00"
+generated: "2021-12-04T15:48:42.824542952+08:00"
