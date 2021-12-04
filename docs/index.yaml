@@ -11,3 +11,13 @@ entries:
     urls:
     - permission-manager-1.7.1-rc1.tgz
     version: 1.7.1-rc1
+  - created: 2021-12-04T10:23:51.000000000+08:00
+    description: Deploy a basic Alpine Linux pod
+    digest: 46b43b97391c803d539ecbe56506e27b3511cb5d6691668c6a95a13c01abaaca
+    home: https://github.com/sighupio/permission-manager
+    name: alpine
+    sources:
+      - https://github.com/sighupio/permission-manager
+    urls:
+      - permission-manager-1.0.0-seal.tgz
+    version: 1.0.0-seal
