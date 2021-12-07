@@ -101,7 +101,7 @@ function useRbacFromApi(): RbacProvider {
   })
   
   const fetchData = useCallback(async function fetchData() {
-    const {data} = await httpClient.get('/api/rbac')
+    const {data} = await httpClient.get('api/rbac')
     //sets the data with the response
     setData(data)
   }, [])

@@ -49,7 +49,7 @@ function useUsersFromApi(): UserProvider {
   
   function fetchUsers(): void {
     setLoading(true)
-    httpClient.get('/api/list-users').then(res => {
+    httpClient.get('api/list-users').then(res => {
       setLoading(false)
       setLoaded(true)
       setUsers(res.data)

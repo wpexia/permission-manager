@@ -71,7 +71,7 @@ export class RolebindingCreateRequests {
       request['generated_for_user'] = params.username
     }
     
-    return await this.httpClient.post('/api/create-cluster-rolebinding', request)
+    return await this.httpClient.post('api/create-cluster-rolebinding', request)
   }
   
   /**
@@ -108,7 +108,7 @@ export class RolebindingCreateRequests {
       request['generated_for_user'] = params.username
     }
     
-    await this.httpClient.post('/api/create-rolebinding', request)
+    await this.httpClient.post('api/create-rolebinding', request)
   }
   
   /**

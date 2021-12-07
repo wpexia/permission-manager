@@ -40,7 +40,7 @@ function RoleBinding({rolebinding: rb, fetchData}: { rolebinding: RoleBindingTyp
   const [, setShowMore] = useState(false)
   
   async function deleteRoleBinding(e) {
-    await httpClient.post('/api/delete-rolebinding', {
+    await httpClient.post('api/delete-rolebinding', {
       rolebindingName: rb.metadata.name,
       namespace: rb.metadata.namespace
     })

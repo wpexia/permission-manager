@@ -7,7 +7,7 @@ export class RolebindingDeleteRequests {
   
   public async rolebinding(rbs: RoleBinding[]) {
     for await (const roleBinding of rbs) {
-      await this.httpClient.post('/api/delete-rolebinding', {
+      await this.httpClient.post('api/delete-rolebinding', {
         rolebindingName: roleBinding.metadata.name,
         namespace: roleBinding.metadata.namespace
       })
@@ -16,7 +16,7 @@ export class RolebindingDeleteRequests {
   
   public async clusterRolebinding(crbs: ClusterRoleBinding[]) {
     for await (const clusterRoleBinding of crbs) {
-      await this.httpClient.post('/api/delete-cluster-rolebinding', {
+      await this.httpClient.post('api/delete-cluster-rolebinding', {
         rolebindingName: clusterRoleBinding.metadata.name
       })
     }

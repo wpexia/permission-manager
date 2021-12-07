@@ -57,7 +57,7 @@ function NewRoleForm({ refreshRbacData }) {
 
   async function onSubmit(e) {
     e.preventDefault()
-    await httpClient.post('/api/create-cluster-role', {
+    await httpClient.post('api/create-cluster-role', {
       roleName,
       rules: rules.map(r => {
         const o = {
@@ -121,7 +121,7 @@ function Role({ role: r, refreshRbacData }) {
   const [showRules, setShowRules] = useState(false)
 
   async function deleteRole(e) {
-    await httpClient.post('/api/delete-cluster-role', {
+    await httpClient.post('api/delete-cluster-role', {
       roleName: r.metadata.name
     })
     refreshRbacData()

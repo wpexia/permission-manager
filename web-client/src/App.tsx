@@ -1,7 +1,7 @@
 import './App.css'
 import React from 'react'
 import {Route, Switch} from 'react-router'
-import {BrowserRouter} from 'react-router-dom'
+import {HashRouter} from 'react-router-dom'
 import {RbacProvider} from './hooks/useRbac'
 import {UsersProvider} from './hooks/useUsers'
 import Header from './components/Header'
@@ -13,7 +13,7 @@ import EditUser from './views/EditUser'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <RbacProvider>
         <UsersProvider>
           <div
@@ -43,6 +43,6 @@ export default function App() {
           </div>
         </UsersProvider>
       </RbacProvider>
-    </BrowserRouter>
+    </HashRouter>
   )
 }

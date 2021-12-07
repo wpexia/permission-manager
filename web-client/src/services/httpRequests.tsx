@@ -39,11 +39,11 @@ class HttpRequests {
   }
   
   public namespaceList() {
-    return this.httpClient.get('/api/list-namespace');
+    return this.httpClient.get('api/list-namespace');
   }
   
   public kubeconfigCreate(username: string, chosenNamespace: string) {
-    return this.httpClient.post('/api/create-kubeconfig', {
+    return this.httpClient.post('api/create-kubeconfig', {
       username: username, namespace: chosenNamespace
     })
   }
@@ -53,7 +53,7 @@ class HttpRequests {
       namespaces = []
     }
 
-    return this.httpClient.post('/api/check-legacy-user', {
+    return this.httpClient.post('api/check-legacy-user', {
       username: username, namespaces: namespaces
     })
   }
